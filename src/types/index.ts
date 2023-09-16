@@ -3,13 +3,12 @@ export type HeroProps = {
   imagePath: string;
   tag: string;
   description: string;
-  authorAvatarPath: string;
   datePublished: string;
 };
 
 export type LandingItemProps = {
   imagePath: string;
   tag: string;
-  date: string;
+  datePublished: string;
   title: string;
 };

@@ -4,28 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font utilities */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'IBM Plex Serif', serif !important;
+  font-weight: 700 !important;
+}
 
-.ibm-sans {
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+body * {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.ibm-serif {
-  font-family: 'IBM Plex Serif', serif;
-}
-
-h1,
-h2 {
-  font-family: 'IBM Plex Serif', serif;
-}
-
 .hero-image {
-  background-image: linear-gradient(
-      rgba(30, 41, 59, 0.9),
-      rgba(30, 41, 59, 0.9)
-    ),
-    url('/images/tiger-spikers.webp');
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

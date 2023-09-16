@@ -2,12 +2,47 @@
   {
     "id": "1",
     "title": "Tiger Spikers Jolt Blue Eagles for V-League Top Seat",
-    "imagePath": "/images/tiger-spikers.webp",
+    "imagePath": "/images/tiger-spikers.png",
     "tag": "SPORTS",
     "description": "The Tiger Spikers now hold a 5-1 win-loss card while the Blue eagles dropped to 4-1 as the V-league semi-finals near.",
     "author": {
       "name": "TomasinoWeb",
-      "authorImagePath": "/images/tiger-author.jpg"
+      "authorImagePath": "/assets/tiger-author.jpg"
+    },
+    "datePublished": "September 10, 2023",
+    "content": [
+      "The UST Golden Booters (1-0-2) failed to secure their second victory in their third game of Ang Liga Season 19, as they settled for a 1-1 draw against the UP Fighting Maroons (2-2-1) on Saturday, September 9, at the UP Diliman Football Pitch.",
+      "The Fighting Maroons drew with forward Mikheil Legarde who notched the first and only goal for UP at the 28th minute mark after being assisted by a drop pass from inside the box and gave the Maroons a 1-0 lead.",
+      "Golden Booters’ veteran winger Chris Valderama answered back and scored the lone goal for UST right before halftime.",
+      "Valderama was also credited for scoring a brace during their last encounter against the Ateneo Blue Eagles which ended in a 3-3 draw.",
+      "With a scoreless second half, both teams displayed a defensive-oriented style of football.This resulted in multiple yellow cards penalized on different players.",
+      "For the Golden Booters, Ilonggo midfielder Archie Belluga received UST’s first yellow card during the 44th-minute of the first half, followed by defensive linemen Jarred Regis and Carlos Orale at the 68th and 84th minutes of the second half after hard tackle challenges.",
+      "For UP, a 13th-minute yellow card was marked off midfielder Lorenz Tortona due to a hard foul. Defensive linemen John Antonio and Vincent Parpan also committed fouls at the 39th minute of the first half and the 72nd minute of the second half respectively.",
+      "UST now boasts a 1-0-2 record in the group stage, while UP notched their first draw of the group stage and now have a 2-2-1 record.",
+      "The UST Golden Booters hope to break their two consecutive draw matches results as they face the UE Red Warriors next on September 16, in the same venue.—with reports from J. Anhag"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Ang Liga: UST settles for another draw versus UP",
+    "imagePath": "/images/ang-liga.webp",
+    "tag": "SPORTS",
+    "description": "The Tiger Spikers now hold a 5-1 win-loss card while the Blue eagles dropped to 4-1 as the V-league semi-finals near.",
+    "author": {
+      "name": "TomasinoWeb",
+      "authorImagePath": "/assets/tiger-author.jpg"
+    },
+    "datePublished": "September 10, 2023"
+  },
+  {
+    "id": "3",
+    "title": "Ang Liga: UST settles for another draw versus UP",
+    "imagePath": "/images/ang-liga.webp",
+    "tag": "SPORTS",
+    "description": "The Tiger Spikers now hold a 5-1 win-loss card while the Blue eagles dropped to 4-1 as the V-league semi-finals near.",
+    "author": {
+      "name": "TomasinoWeb",
+      "authorImagePath": "/assets/tiger-author.jpg"
     },
     "datePublished": "September 10, 2023"
   }

@@ -3,16 +3,16 @@ import Image from 'next/image';
 export default function Navbar() {
   return (
     <>
-      <nav className="bg-slate-800 px-[7%] py-[1rem] text-white">
-        <button className="absolute">
+      <nav className="bg-[#191a1c] px-[8%] py-[1rem] text-white">
+        <button className="absolute top-[1.5rem]">
           <Image
             src="/assets/bars-solid.svg"
             alt="Menu"
-            width={29}
-            height={29}
+            width={19}
+            height={22}
           />
         </button>
-        <h1 className="text-center text-2xl font-bold">tigerio</h1>
+        <h3 className="text-center">WB</h3>
       </nav>
     </>
   );

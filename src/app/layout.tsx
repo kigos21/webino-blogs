@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'tigerio',
+  title: 'Webino Blogs',
 };
 
 export default function RootLayout({
