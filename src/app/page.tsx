@@ -12,7 +12,7 @@ export default async function Home() {
       <section className="mb-[30px]">
         <Hero
           title={hero.title}
-          imagePath={hero.imagePath}
+          imagePath={`/images/${hero.id}.png`}
           tag={hero.tag}
           description={hero.description}
           datePublished={hero.datePublished}
@@ -20,13 +20,13 @@ export default async function Home() {
       </section>
 
       <section>
-        <h2 className="mb-[1.25rem] text-[2.25rem]">Latest</h2>
+        <h2 className="mb-[22px] text-[18px]">Latest</h2>
 
-        <div className="flex flex-col gap-[2rem]">
+        <div className="flex flex-col gap-[21px]">
           {blogs.slice(1, 5).map(blog => (
             <LandingItem
               key={blog.id}
-              imagePath={blog.imagePath}
+              imagePath={`/images/${blog.id}.png`}
               tag={blog.tag}
               datePublished={blog.datePublished}
               title={blog.title}

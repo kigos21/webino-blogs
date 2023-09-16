@@ -12,19 +12,19 @@ export default function LandingItem({
       <Image
         src={imagePath}
         alt="Article image"
-        width={360}
+        width={480}
         height={0}
-        className="h-auto w-full basis-1/3 rounded-lg"
+        className="aspect-[4/3] h-auto w-full basis-1/3 self-start rounded-[5px]"
       />
-      <div className="flex flex-shrink basis-2/3 flex-col">
-        <div className="mb-[0.75rem] flex items-center gap-[0.5rem]">
-          <div className="rounded-lg border-2 border-black px-[1.25rem] py-[0.25rem] text-[10px] font-[600]">
+      <div className="flex flex-shrink basis-2/3 flex-col gap-[8px]">
+        <div className="flex items-center gap-[6px]">
+          <div className="rounded-[5px] border border-[#3B4046] px-[10px] py-[5px] text-[8px] font-semibold text-[#3B4046]">
             {tag}
           </div>
-          <Image src="/assets/dot.svg" alt="." width={4} height={4} />
-          <p className="text-[10px]">{datePublished}</p>
+          <Image src="/assets/dot.svg" alt="." width={3} height={3} />
+          <p className="text-[8px] text-[#3B4046]">{datePublished}</p>
         </div>
-        <h4>{title}</h4>
+        <h4 className="text-[10px]">{title}</h4>
       </div>
     </div>
   );
