@@ -3,14 +3,22 @@ import { HeroProps } from '@/types';
 
 export default function Hero({
   title,
+  imagePath,
   tag,
   description,
   authorAvatarPath,
   datePublished,
 }: HeroProps) {
+  const heroStyle = {
+    backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.9),rgba(30, 41, 59, 0.9)),url('${imagePath}')`,
+  };
+
   return (
     <div className="box-border overflow-hidden rounded-2xl bg-slate-200">
-      <div className="hero-image flex flex-col gap-[1rem] px-[2rem] pb-[2rem] pt-[10rem] text-white">
+      <div
+        className="hero-image flex flex-col gap-[1rem] px-[2rem] pb-[2rem] pt-[10rem] text-white"
+        style={heroStyle}
+      >
         <h2 className="ibm-serif text-[2.25rem]">{title}</h2>
         <p>
           <span className="font-bold">{tag}</span> &mdash; {description}

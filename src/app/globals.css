@@ -14,8 +14,16 @@
   font-family: 'IBM Plex Serif', serif;
 }
 
+h1,
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+}
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(
+      rgba(30, 41, 59, 0.9),
+      rgba(30, 41, 59, 0.9)
+    ),
     url('/images/tiger-spikers.webp');
 
   background-position: center;
