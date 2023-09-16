@@ -10,7 +10,7 @@ export default function LargeCard({
   description,
 }: LargeCardProps) {
   return (
-    <div className="flex flex-col gap-[10px]">
+    <div className="flex cursor-pointer flex-col gap-[10px] rounded-[15px] p-[10px] hover:bg-[#212426]">
       <Image
         src={imagePath}
         alt="Article image"

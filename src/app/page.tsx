@@ -20,10 +20,10 @@ export default async function Home() {
         />
       </section>
 
-      <section className="mb-[37px] px-[8%]">
-        <h2 className="mb-[22px] text-[18px]">Latest</h2>
+      <section className="mb-[32px] px-[calc(8%-5px)]">
+        <h2 className="mb-[17px] px-[5px] text-[18px]">Latest</h2>
 
-        <div className="flex flex-col gap-[21px]">
+        <div className="flex flex-col gap-[11px]">
           {blogs.slice(1, 5).map(blog => (
             <SmallCard
               key={blog.id}
@@ -36,8 +36,8 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="bg-[#181a1c] px-[8%] py-[45px] text-white">
-        <div className="flex flex-col gap-[44px]">
+      <section className="bg-[#181a1c] px-[calc(8%-10px)] py-[35px] text-white ">
+        <div className="flex flex-col gap-[24px]">
           {blogs.slice(5, 7).map(blog => (
             <LargeCard
               key={blog.id}
@@ -49,6 +49,10 @@ export default async function Home() {
             />
           ))}
         </div>
+      </section>
+
+      <section>
+        <h2 className="mb-[22px] text-[18px]">Latest</h2>
       </section>
     </main>
   );

@@ -1,6 +1,7 @@
+import Image from 'next/image';
+
 import { SmallCardProps } from '@/types';
 import DateTag from '@/components/DateTag';
-import Image from 'next/image';
 
 export default function SmallCard({
   imagePath,
@@ -9,7 +10,7 @@ export default function SmallCard({
   title,
 }: SmallCardProps) {
   return (
-    <div className="flex items-center gap-[0.8rem]">
+    <div className="flex cursor-pointer items-center gap-[0.8rem] rounded-[8px] p-[5px] transition-all hover:bg-neutral-100">
       <Image
         src={imagePath}
         alt="Article image"
