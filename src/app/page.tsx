@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
-import LandingItem from '@/components/LandingItem';
+import SmallCard from '@/components/SmallCard';
+import LargeCard from '@/components/LargeCard';
 
 export default async function Home() {
   const res = await fetch('http://localhost:3000/blogs.json');
@@ -8,8 +9,8 @@ export default async function Home() {
   const hero = blogs[0];
 
   return (
-    <main className="px-[8%] pt-[25px]">
-      <section className="mb-[30px]">
+    <main className="pt-[25px]">
+      <section className="mb-[30px] px-[8%]">
         <Hero
           title={hero.title}
           imagePath={`/images/${hero.id}.png`}
@@ -19,17 +20,32 @@ export default async function Home() {
         />
       </section>
 
-      <section>
+      <section className="mb-[37px] px-[8%]">
         <h2 className="mb-[22px] text-[18px]">Latest</h2>
 
         <div className="flex flex-col gap-[21px]">
           {blogs.slice(1, 5).map(blog => (
-            <LandingItem
+            <SmallCard
               key={blog.id}
               imagePath={`/images/${blog.id}.png`}
               tag={blog.tag}
               datePublished={blog.datePublished}
               title={blog.title}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#181a1c] px-[8%] py-[45px] text-white">
+        <div className="flex flex-col gap-[44px]">
+          {blogs.slice(5, 7).map(blog => (
+            <LargeCard
+              key={blog.id}
+              imagePath={`/images/${blog.id}.png`}
+              tag={blog.tag}
+              datePublished={blog.datePublished}
+              title={blog.title}
+              description={blog.description}
             />
           ))}
         </div>

@@ -7,7 +7,9 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: 'IBM Plex Serif', serif !important;
   font-weight: 700 !important;
 }
@@ -26,6 +28,14 @@ h3 {
 
 h4 {
   font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 body * {
