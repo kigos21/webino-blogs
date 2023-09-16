@@ -36,7 +36,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="bg-[#181a1c] px-[calc(8%-10px)] py-[35px] text-white ">
+      <section className="mb-[39px] bg-[#181a1c] px-[calc(8%-10px)] py-[35px] text-white">
         <div className="flex flex-col gap-[24px]">
           {blogs.slice(5, 7).map(blog => (
             <LargeCard
@@ -51,8 +51,20 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
-        <h2 className="mb-[22px] text-[18px]">Latest</h2>
+      <section className="mb-[32px] px-[calc(8%-5px)]">
+        <h2 className="mb-[17px] px-[5px] text-[18px]">More Articles</h2>
+
+        <div className="flex flex-col gap-[11px]">
+          {blogs.slice(7, 11).map(blog => (
+            <SmallCard
+              key={blog.id}
+              imagePath={`/images/${blog.id}.png`}
+              tag={blog.tag}
+              datePublished={blog.datePublished}
+              title={blog.title}
+            />
+          ))}
+        </div>
       </section>
     </main>
   );

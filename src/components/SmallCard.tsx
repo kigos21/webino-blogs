@@ -20,7 +20,7 @@ export default function SmallCard({
       />
       <div className="flex flex-shrink basis-2/3 flex-col gap-[8px]">
         <DateTag datePublished={datePublished} tag={tag} isDarkTheme={false} />
-        <h4 className="text-[10px]">{title}</h4>
+        <h4 className="line-clamp-2 text-[10px]">{title}</h4>
       </div>
     </div>
   );

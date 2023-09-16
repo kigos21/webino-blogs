@@ -20,7 +20,7 @@ export default function LargeCard({
       />
       <DateTag datePublished={datePublished} tag={tag} isDarkTheme={true} />
       <div>
-        <h6>{title}</h6>
+        <h6 className="line-clamp-2">{title}</h6>
         <p className="line-clamp-2 text-[8px]">{description}</p>
       </div>
     </div>
