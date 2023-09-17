@@ -4,11 +4,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
+import NavLink from '@/components/NavLink';
+
 export default function Navbar() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
 
   function handleMenuClick(): void {
     setShowNav(state => !state);
+  }
+
+  function handleLinkClick(): void {
+    setShowNav(false);
   }
 
   return (
@@ -22,7 +28,11 @@ export default function Navbar() {
             height={22}
           />
         </button>
-        <h3 className="text-center">WB</h3>
+        <h3 className="text-center">
+          <Link href="/" onClick={handleLinkClick} className="nav-brand">
+            WB
+          </Link>
+        </h3>
       </div>
 
       <nav
@@ -31,15 +41,24 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-center gap-[15px]">
-          <li className="underline-offset- text-[16px] font-[600] uppercase hover:underline">
-            <Link href="">Reports</Link>
-          </li>
-          <li className="text-[16px] font-[600] uppercase underline-offset-2 hover:underline">
-            <Link href="">Blogs</Link>
-          </li>
-          <li className="text-[16px] font-[600] uppercase underline-offset-2 hover:underline">
-            <Link href="">Sports</Link>
-          </li>
+          <NavLink
+            showNav={showNav}
+            handleClick={handleLinkClick}
+            href="/reports"
+            title="Reports"
+          />
+          <NavLink
+            showNav={showNav}
+            handleClick={handleLinkClick}
+            href="/blogs"
+            title="Blogs"
+          />
+          <NavLink
+            showNav={showNav}
+            handleClick={handleLinkClick}
+            href="/sports"
+            title="Sports"
+          />
         </ul>
       </nav>
     </>

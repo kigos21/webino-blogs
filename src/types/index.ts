@@ -6,6 +6,13 @@ export type HeroProps = {
   datePublished: string;
 };
 
+export type NavLinkProps = {
+  showNav: boolean;
+  href: string;
+  title: string;
+  handleClick: () => void;
+};
+
 export type DateTagProps = {
   tag: string;
   datePublished: string;
@@ -25,4 +32,11 @@ export type LargeCardProps = {
   datePublished: string;
   title: string;
   description: string;
+  isDarkTheme: boolean;
+};
+
+export type PageHeaderProps = {
+  title: string;
+  description: string;
+  bgColor: string;
 };

@@ -11,7 +11,7 @@ export default function Hero({
   return (
     <div className="cursor-pointer overflow-hidden rounded-[10px] transition-all hover:shadow-lg hover:shadow-neutral-500">
       <div
-        className="hero-image flex flex-col gap-[10px] px-[20px] pb-[20px] pt-[50%] text-white"
+        className="hero-image flex flex-col gap-[10px] pb-[20px] pl-[20px] pr-[40px] pt-[50%] text-white"
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(13, 14, 16, 0.00) 0%, rgba(13, 14, 16, 0.52) 36.46%, #0D0E10 100%), url('${imagePath}')`,
         }}
