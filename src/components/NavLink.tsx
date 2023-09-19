@@ -10,7 +10,7 @@ export default function NavLink({
 }: NavLinkProps) {
   return (
     <li
-      className={`underline-offset- text-[16px] font-[600] uppercase transition-opacity duration-700 hover:underline ${
+      className={`text-[16px] font-[600] uppercase underline-offset-2 transition-opacity duration-700 hover:underline ${
         showNav ? '' : 'opacity-0'
       }`}
     >

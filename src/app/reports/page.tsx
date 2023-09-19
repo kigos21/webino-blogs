@@ -17,7 +17,7 @@ export default async function ReportsPage() {
         bgColor="DD8E54"
       />
 
-      <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px]">
+      <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px] md:gap-[60px] md:py-[74px]">
         {reports.map((report: any) => (
           <LargeCard
             id={report.id}

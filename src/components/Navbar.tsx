@@ -40,9 +40,24 @@ export default function Navbar() {
         </h3>
         <nav className="max-md:hidden">
           <ul className="flex gap-[45px]">
-            <li className="font-[600] uppercase">Reports</li>
-            <li className="font-[600] uppercase">Blogs</li>
-            <li className="font-[600] uppercase">Sports</li>
+            <NavLink
+              showNav={true}
+              handleClick={handleLinkClick}
+              href="/reports"
+              title="Reports"
+            />
+            <NavLink
+              showNav={true}
+              handleClick={handleLinkClick}
+              href="/blogs"
+              title="Blogs"
+            />
+            <NavLink
+              showNav={true}
+              handleClick={handleLinkClick}
+              href="/sports"
+              title="Sports"
+            />
           </ul>
         </nav>
       </div>

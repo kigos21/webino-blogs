@@ -52,3 +52,12 @@ body * {
   background-size: cover;
   position: relative;
 }
+
+@media (min-width: 768px) and (max-width: 1062px) {
+  .large_card_title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}

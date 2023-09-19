@@ -21,10 +21,12 @@ export default async function Home() {
         />
       </section>
 
-      <section className="mb-[32px] px-[calc(8%-5px)]">
-        <h2 className="mb-[17px] px-[5px] text-[18px]">Latest</h2>
+      <section className="mb-[32px] px-[calc(8%-5px)] md:my-[60px]">
+        <h2 className="mb-[17px] px-[5px] text-[18px] md:mb-[29px] md:text-[24px]">
+          Latest
+        </h2>
 
-        <div className="flex flex-col gap-[11px]">
+        <div className="grid grid-cols-1 gap-[11px] md:grid-cols-2 md:gap-[5%] md:max-lg:pb-[40px] lg:grid-cols-4">
           {blogs.slice(1, 5).map(blog => (
             <SmallCard
               id={blog.id}
@@ -38,8 +40,8 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="mb-[39px] bg-[#181a1c] px-[calc(8%-10px)] py-[35px]">
-        <div className="flex flex-col gap-[24px]">
+      <section className="bg-[#181a1c] px-[calc(8%-10px)] py-[35px] md:py-[50px]">
+        <div className="flex flex-col gap-[24px] md:flex-row md:gap-[4%]">
           {blogs.slice(5, 7).map(blog => (
             <LargeCard
               id={blog.id}
@@ -55,10 +57,12 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="mb-[32px] px-[calc(8%-5px)]">
-        <h2 className="mb-[17px] px-[5px] text-[18px]">More Articles</h2>
+      <section className="px-[calc(8%-5px)] py-[32px] md:py-[60px]">
+        <h2 className="mb-[17px] px-[5px] text-[18px] md:mb-[24px] md:text-[24px]">
+          More Articles
+        </h2>
 
-        <div className="flex flex-col gap-[11px]">
+        <div className="grid grid-cols-1 gap-[11px] md:grid-cols-2 md:gap-[5%] md:max-lg:pb-[40px] lg:grid-cols-4">
           {blogs.slice(7, 11).map(blog => (
             <SmallCard
               id={blog.id}

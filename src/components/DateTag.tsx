@@ -20,12 +20,20 @@ export default function DateTag({
   return (
     <div className="flex items-center gap-[6px]">
       <div
-        className={`rounded-[5px] border px-[10px] py-[5px] text-[8px] font-semibold ${tagStyle}`}
+        className={`rounded-[5px] border px-[10px] py-[5px] text-[8px] font-semibold md:text-[12px] ${tagStyle}`}
       >
         {tag}
       </div>
-      <Image src={separatorPath} alt="." width={2} height={2} />
-      <p className={`text-[8px] ${textStyle}`}>{datePublished}</p>
+      <Image
+        src={separatorPath}
+        alt="."
+        width={2}
+        height={2}
+        className="md:w-[4px]"
+      />
+      <p className={`text-[8px] md:text-[12px] ${textStyle}`}>
+        {datePublished}
+      </p>
     </div>
   );
 }
