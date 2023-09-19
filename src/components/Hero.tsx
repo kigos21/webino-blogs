@@ -14,23 +14,30 @@ export default function Hero({
     <Link href={`/posts/${id}`}>
       <div className="cursor-pointer overflow-hidden rounded-[10px] transition-all hover:shadow-lg hover:shadow-neutral-500">
         <div
-          className="hero-image flex flex-col gap-[10px] pb-[20px] pl-[20px] pr-[40px] pt-[50%] text-white"
+          className="hero-image flex flex-col gap-[10px] pb-[20px] pl-[7%] pr-[17%] pt-[35%] text-white md:gap-[15px] md:pb-[66px]"
           style={{
             backgroundImage: `linear-gradient(180deg, rgba(13, 14, 16, 0.00) 0%, rgba(13, 14, 16, 0.52) 36.46%, #0D0E10 100%), url('${imagePath}')`,
           }}
         >
-          <h4 className="line-clamp-3 font-bold underline-offset-4">{title}</h4>
-          <p className="text-[8px]">
+          <h4 className="line-clamp-3 font-bold underline-offset-4 md:line-clamp-2 md:max-w-[90%] md:text-[40px]">
+            {title}
+          </h4>
+
+          <p className="line-clamp-2 text-[8px] md:line-clamp-3 md:max-w-[90%] md:text-[16px]">
             <span className="font-[600]">{tag} &mdash;</span> {description}
           </p>
-          <div className="flex gap-[0.75rem]">
+
+          <div className="flex gap-[0.75rem] md:max-w-[90%]">
             <Image
               src={'/assets/calendar.svg'}
               alt="calendar icon"
               width={12}
               height={12}
+              className="md:h-auto md:w-[17px]"
             />
-            <p className="flex items-center text-[8px]">{datePublished}</p>
+            <p className="flex items-center text-[8px] md:text-[12px]">
+              {datePublished}
+            </p>
           </div>
         </div>
       </div>

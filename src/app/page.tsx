@@ -9,7 +9,7 @@ export default async function Home() {
   const hero = blogs[0];
 
   return (
-    <main className="pt-[25px]">
+    <main className="pt-[25px] md:pt-[60px]">
       <section className="mb-[30px] px-[8%]">
         <Hero
           id={hero.id}

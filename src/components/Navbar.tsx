@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import NavLink from '@/components/NavLink';
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
+  const isSmallDevice = useMediaQuery({ maxWidth: 767 });
 
   function handleMenuClick(): void {
     setShowNav(state => !state);
@@ -19,8 +21,11 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-[#191a1c] px-[8%] py-[1rem] text-white">
-        <button className="absolute top-[1.5rem]" onClick={handleMenuClick}>
+      <div className="bg-[#191a1c] px-[8%] py-[1rem] text-white md:flex md:items-center md:justify-between">
+        <button
+          className="absolute top-[1.5rem] md:hidden"
+          onClick={handleMenuClick}
+        >
           <Image
             src="/assets/bars-solid.svg"
             alt="Menu"
@@ -28,15 +33,22 @@ export default function Navbar() {
             height={22}
           />
         </button>
-        <h3 className="text-center">
+        <h3 className="text-center md:text-left">
           <Link href="/" onClick={handleLinkClick} className="nav-brand">
-            WB
+            {isSmallDevice ? 'WB' : 'Webino Blogs'}
           </Link>
         </h3>
+        <nav className="max-md:hidden">
+          <ul className="flex gap-[45px]">
+            <li className="font-[600] uppercase">Reports</li>
+            <li className="font-[600] uppercase">Blogs</li>
+            <li className="font-[600] uppercase">Sports</li>
+          </ul>
+        </nav>
       </div>
 
       <nav
-        className={`nav absolute left-0 right-0 z-50 flex flex-col items-center bg-[#191a1c] py-[33px] text-white transition-transform ${
+        className={`nav absolute left-0 right-0 z-50 flex flex-col items-center bg-[#191a1c] py-[33px] text-white transition-transform lg:hidden ${
           showNav ? '' : '-translate-y-[150%]'
         }`}
       >
