@@ -19,7 +19,7 @@ export default function Hero({
             backgroundImage: `linear-gradient(180deg, rgba(13, 14, 16, 0.00) 0%, rgba(13, 14, 16, 0.52) 36.46%, #0D0E10 100%), url('${imagePath}')`,
           }}
         >
-          <h4 className="font-bold underline-offset-4">{title}</h4>
+          <h4 className="line-clamp-3 font-bold underline-offset-4">{title}</h4>
           <p className="text-[8px]">
             <span className="font-[600]">{tag} &mdash;</span> {description}
           </p>
