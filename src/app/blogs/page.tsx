@@ -5,7 +5,7 @@ export default async function BlogsPage() {
   const res = await fetch('http://localhost:3000/blogs.json');
   const data = await res.json();
 
-  const reports = data.filter(
+  const blogs = data.filter(
     (article: { tag: string }) => article.tag === 'BLOGS',
   );
 
@@ -18,14 +18,15 @@ export default async function BlogsPage() {
       />
 
       <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px]">
-        {reports.map((report: any) => (
+        {blogs.map((blog: any) => (
           <LargeCard
-            key={report.id}
-            imagePath={`/images/${report.id}.png`}
-            tag={report.tag}
-            datePublished={report.datePublished}
-            title={report.title}
-            description={report.description}
+            id={blog.id}
+            key={blog.id}
+            imagePath={`/images/${blog.id}.png`}
+            tag={blog.tag}
+            datePublished={blog.datePublished}
+            title={blog.title}
+            description={blog.description}
             isDarkTheme={false}
           />
         ))}

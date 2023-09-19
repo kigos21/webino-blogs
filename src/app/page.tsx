@@ -12,6 +12,7 @@ export default async function Home() {
     <main className="pt-[25px]">
       <section className="mb-[30px] px-[8%]">
         <Hero
+          id={hero.id}
           title={hero.title}
           imagePath={`/images/${hero.id}.png`}
           tag={hero.tag}
@@ -26,6 +27,7 @@ export default async function Home() {
         <div className="flex flex-col gap-[11px]">
           {blogs.slice(1, 5).map(blog => (
             <SmallCard
+              id={blog.id}
               key={blog.id}
               imagePath={`/images/${blog.id}.png`}
               tag={blog.tag}
@@ -40,6 +42,7 @@ export default async function Home() {
         <div className="flex flex-col gap-[24px]">
           {blogs.slice(5, 7).map(blog => (
             <LargeCard
+              id={blog.id}
               key={blog.id}
               imagePath={`/images/${blog.id}.png`}
               tag={blog.tag}
@@ -58,6 +61,7 @@ export default async function Home() {
         <div className="flex flex-col gap-[11px]">
           {blogs.slice(7, 11).map(blog => (
             <SmallCard
+              id={blog.id}
               key={blog.id}
               imagePath={`/images/${blog.id}.png`}
               tag={blog.tag}

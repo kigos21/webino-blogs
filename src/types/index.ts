@@ -1,4 +1,5 @@
 export type HeroProps = {
+  id: number;
   title: string;
   imagePath: string;
   tag: string;
@@ -20,6 +21,7 @@ export type DateTagProps = {
 };
 
 export type SmallCardProps = {
+  id: number;
   imagePath: string;
   tag: string;
   datePublished: string;
@@ -27,6 +29,7 @@ export type SmallCardProps = {
 };
 
 export type LargeCardProps = {
+  id: number;
   imagePath: string;
   tag: string;
   datePublished: string;

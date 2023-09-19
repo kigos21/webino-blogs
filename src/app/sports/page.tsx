@@ -5,7 +5,7 @@ export default async function SportsPage() {
   const res = await fetch('http://localhost:3000/blogs.json');
   const data = await res.json();
 
-  const reports = data.filter(
+  const sports = data.filter(
     (article: { tag: string }) => article.tag === 'SPORTS',
   );
 
@@ -18,14 +18,15 @@ export default async function SportsPage() {
       />
 
       <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px]">
-        {reports.map((report: any) => (
+        {sports.map((sport: any) => (
           <LargeCard
-            key={report.id}
-            imagePath={`/images/${report.id}.png`}
-            tag={report.tag}
-            datePublished={report.datePublished}
-            title={report.title}
-            description={report.description}
+            id={sport.id}
+            key={sport.id}
+            imagePath={`/images/${sport.id}.png`}
+            tag={sport.tag}
+            datePublished={sport.datePublished}
+            title={sport.title}
+            description={sport.description}
             isDarkTheme={false}
           />
         ))}

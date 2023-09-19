@@ -20,6 +20,7 @@ export default async function ReportsPage() {
       <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px]">
         {reports.map((report: any) => (
           <LargeCard
+            id={report.id}
             key={report.id}
             imagePath={`/images/${report.id}.png`}
             tag={report.tag}
