@@ -28,6 +28,7 @@ export default async function SportsPage() {
             title={sport.title}
             description={sport.description}
             isDarkTheme={false}
+            isInLandingPage={false}
           />
         ))}
       </section>

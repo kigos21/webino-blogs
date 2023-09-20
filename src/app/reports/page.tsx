@@ -28,6 +28,7 @@ export default async function ReportsPage() {
             title={report.title}
             description={report.description}
             isDarkTheme={false}
+            isInLandingPage={false}
           />
         ))}
       </section>

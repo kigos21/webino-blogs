@@ -28,6 +28,7 @@ export default async function BlogsPage() {
             title={blog.title}
             description={blog.description}
             isDarkTheme={false}
+            isInLandingPage={false}
           />
         ))}
       </section>
