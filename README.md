@@ -1,8 +1,13 @@
 # Webino Blogs
 
-To get a local copy up and running follow these simple example steps.
+## Built with
+ - Typescript
+ - Next.js 13
+ - React
+ - Tailwind
 
 ### Prerequisites
+To get a local copy up and running follow these simple example steps.
 
 You need to have Node and npm installed. You can download [Node.js](https://nodejs.org/en/download) here.
 
