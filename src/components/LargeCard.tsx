@@ -19,7 +19,7 @@ export default function LargeCard({
   return (
     <Link href={`/posts/${id}`} className="rounded-[12px]">
       <div
-        className={`flex cursor-pointer flex-col gap-[10px] rounded-[12px] p-[10px] transition-all md:min-h-[186px] md:flex-row md:items-center md:gap-[30px] hover:${
+        className={`mx-auto flex cursor-pointer flex-col gap-[10px] rounded-[12px] p-[10px] transition-all max-md:max-w-[460px] md:min-h-[186px] md:flex-row md:items-center md:gap-[30px] hover:${
           isDarkTheme ? 'bg-[#212426]' : 'bg-neutral-100'
         }`}
       >
@@ -30,14 +30,14 @@ export default function LargeCard({
           height={0}
           className="aspect-video h-auto w-full flex-grow basis-1/3 rounded-[5px] object-cover object-center"
         />
-        <div className="md:flex md:basis-3/5 md:flex-col md:gap-[15px]">
+        <div className="flex flex-col gap-[7px] md:flex md:basis-3/5 md:flex-col md:gap-[15px]">
           <DateTag
             datePublished={datePublished}
             tag={tag}
             isDarkTheme={isDarkTheme}
           />
           <div className={`${isDarkTheme ? 'text-white' : ''}`}>
-            <h6 className="large_card_title line-clamp-2 md:mb-[15px] md:text-[24px]">
+            <h6 className="large_card_title mb-[4px] line-clamp-2 md:mb-[15px] md:text-[24px]">
               {title}
             </h6>
             <p className="line-clamp-2 text-[8px] md:text-[16px]">

@@ -12,7 +12,7 @@ export default function Hero({
 }: HeroProps) {
   return (
     <Link href={`/posts/${id}`}>
-      <div className="cursor-pointer overflow-hidden rounded-[10px] transition-all hover:shadow-lg hover:shadow-neutral-500">
+      <div className="mx-auto cursor-pointer overflow-hidden rounded-[10px] transition-all hover:shadow-lg hover:shadow-neutral-500 max-md:max-w-[460px]">
         <div
           className="hero-image flex flex-col gap-[10px] pb-[20px] pl-[7%] pr-[17%] pt-[35%] text-white md:gap-[15px] md:pb-[66px] xl:pt-[25%]"
           style={{

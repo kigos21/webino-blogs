@@ -21,8 +21,8 @@ export default async function Home() {
         />
       </section>
 
-      <section className="mb-[32px] px-[calc(8%-5px)] md:my-[60px]">
-        <h2 className="mb-[17px] px-[5px] text-[18px] md:mb-[29px] md:text-[24px]">
+      <section className="mb-[32px] px-[calc(8%-10px)] md:my-[60px]">
+        <h2 className="mx-auto mb-[17px] px-[5px] text-[18px] max-md:max-w-[460px] md:mb-[29px] md:text-[24px]">
           Latest
         </h2>
 
@@ -57,8 +57,8 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="px-[calc(8%-5px)] py-[32px] md:py-[60px]">
-        <h2 className="mb-[17px] px-[5px] text-[18px] md:mb-[24px] md:text-[24px]">
+      <section className="px-[calc(8%-10px)] py-[32px] md:py-[60px]">
+        <h2 className="mx-auto mb-[17px] px-[5px] text-[18px] max-md:max-w-[460px] md:mb-[24px] md:text-[24px]">
           More Articles
         </h2>
 

@@ -10,7 +10,7 @@ export default function PageHeader({
 
   return (
     <header
-      className={`py-[54px] pl-[8%] pr-[12%] md:py-[90px] md:pr-[45%] bg-[#${bgColor}]`}
+      className={`py-[54px] pl-[8%] pr-[12%] md:py-[90px] md:pr-[40%] bg-[#${bgColor}]`}
     >
       <h3 className="mb-[12px] md:text-[40px]">{title}</h3>
       <p className="text-[12px] md:text-[16px]">{description}</p>

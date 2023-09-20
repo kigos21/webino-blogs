@@ -17,7 +17,7 @@ export default async function SportsPage() {
         bgColor="bb7082"
       />
 
-      <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px]">
+      <section className="flex flex-col gap-[35px] px-[calc(8%-10px)] py-[41px] md:gap-[60px] md:py-[74px]">
         {sports.map((sport: any) => (
           <LargeCard
             id={sport.id}

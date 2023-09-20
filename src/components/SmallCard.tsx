@@ -13,7 +13,7 @@ export default function SmallCard({
 }: SmallCardProps) {
   return (
     <Link href={`/posts/${id}`}>
-      <div className="flex cursor-pointer items-center gap-[0.8rem] rounded-[8px] p-[5px] transition-all hover:bg-neutral-100 md:flex-col md:gap-[15px]">
+      <div className="mx-auto flex cursor-pointer items-center gap-[0.8rem] rounded-[8px] p-[10px] transition-all hover:bg-neutral-100 max-md:max-w-[460px] md:flex-col md:gap-[15px]">
         <Image
           src={imagePath}
           alt="Article image"
