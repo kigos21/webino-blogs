@@ -51,6 +51,7 @@ export default async function Home() {
               datePublished={blog.datePublished}
               title={blog.title}
               description={blog.description}
+              isInLandingPage={true}
               isDarkTheme={true}
             />
           ))}

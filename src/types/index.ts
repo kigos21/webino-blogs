@@ -35,6 +35,7 @@ export type LargeCardProps = {
   datePublished: string;
   title: string;
   description: string;
+  isInLandingPage: boolean;
   isDarkTheme: boolean;
 };
 

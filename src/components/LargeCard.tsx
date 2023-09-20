@@ -11,17 +11,21 @@ export default function LargeCard({
   datePublished,
   title,
   description,
+  isInLandingPage,
   isDarkTheme,
 }: LargeCardProps) {
   // tailwind compile these classes
   const tailwind = 'hover:bg-[#212426] hover:bg-neutral-100';
 
   return (
-    <Link href={`/posts/${id}`} className="rounded-[12px]">
+    <Link
+      href={`/posts/${id}`}
+      className="mx-auto rounded-[12px] max-md:max-w-[460px]"
+    >
       <div
-        className={`mx-auto flex cursor-pointer flex-col gap-[10px] rounded-[12px] p-[10px] transition-all max-md:max-w-[460px] md:min-h-[186px] md:flex-row md:items-center md:gap-[30px] hover:${
-          isDarkTheme ? 'bg-[#212426]' : 'bg-neutral-100'
-        }`}
+        className={`flex cursor-pointer flex-col gap-[10px] rounded-[12px] p-[10px] transition-all md:min-h-[186px] md:items-center md:gap-[30px] ${
+          isInLandingPage ? '' : 'md:flex-row'
+        } hover:${isDarkTheme ? 'bg-[#212426]' : 'bg-neutral-100'}`}
       >
         <Image
           src={imagePath}
