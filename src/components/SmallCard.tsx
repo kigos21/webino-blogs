@@ -19,7 +19,7 @@ export default function SmallCard({
           alt="Article image"
           width={480}
           height={0}
-          className="aspect-[4/3] h-auto w-full basis-1/3 self-start rounded-[5px] object-cover object-center md:aspect-video"
+          className="aspect-[4/3] h-auto w-1/3 basis-1/3 self-start rounded-[5px] object-cover object-center md:aspect-video md:w-full"
         />
         <div className="flex flex-shrink basis-2/3 flex-col gap-[8px] md:w-full">
           <DateTag
